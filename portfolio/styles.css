@@ -9,16 +9,57 @@ body {
   font-size: 20px;
 }
 
-h1,h2,h3 {
-  color: #4c6781;
-  font-size: 30px
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
+main {
+  background:#348e21;
+  header {
+    background:#aaa;
+    color:#fff;
+    text-align:right;
+    padding:70px 10% 50px;
+    align-items:flex-end;
+    align-content:space-around;
+    @media(min-width:1023px) {
+      padding:50px 30px ;
+    }
+    img {
+      border-radius:50%;
+      margin:30px 0 10px;
+      max-width:80%;
+      height:auto;
+      width:250px;
+    }
+    .intro-text {
+    max-width:675px;
+    text-align:center;
+    margin-bottom:30px;
+    @media(min-width:1023px) {
+      text-align:right;
+      width:610px;
+    }
+      .skills {
+        font-size: 1.15em;
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 }
 
+
 #banner .container, 
-main header, 
+main header,
 #portfolio .grid, 
 #contact>div,
 footer #footer-above {
@@ -29,32 +70,28 @@ footer #footer-above {
   margin:0 auto; 
 }
 
-header {
-  background: #ACD1FF;
-  color: #00274c;
-  text-align:right;
-  padding:70px 10% 50px;
-  align-items:flex-end;
-  align-content:space-around;
-  @media(min-width:1023px) {
-    padding:50px 30px ;
+
+#banner{
+  background-color:#555 !important;
+  height:80px;
+  box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-color:#888;
+  .container{
+    width:95%;
+    max-width:1024px;
+    justify-content:space-between;
+    align-items:center;
+    &::before, &::after{
+      display:none
+    }
   }
 }
 
-.intro-text {
-  max-width:675px;
-  margin-bottom:30px;
-  text-align:right;
-  width:610px;
+#top {
+  height:80px;
+  display:block;
 }
 
-.skills {
-  max-width:675px;
-  margin-bottom:30px;
-  text-align:right;
-  width:610px;
-  font-size: 1.15em;
-}
 
 hr.style1{
     border-top: 3px solid #535B8A;
@@ -66,13 +103,7 @@ hr.style3{
     border-top: 3px solid #535B8A;
 }
 
-img.self {
-  border-radius:50%;
-  margin:30px 0 10px;
-  max-width:80%;
-  height:auto;
-  width:250px;  
-}
+
 img.app {
   margin:30px 0 10px;
   height:auto;
@@ -103,8 +134,14 @@ img {
   max-width:600px;
   @media(min-width:1023px) {
     max-width:420px;
+    }
   }
 }
+& img {
+  
+    max-width:100%;
+    height:auto;
+    display:block;
 }
 }
 
